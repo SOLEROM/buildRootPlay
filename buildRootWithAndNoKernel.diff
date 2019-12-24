@@ -1,0 +1,216 @@
+164a165
+> # BR2_KERNEL_HEADERS_AS_KERNEL is not set
+368c369,419
+< # BR2_LINUX_KERNEL is not set
+---
+> BR2_LINUX_KERNEL=y
+> BR2_LINUX_KERNEL_LATEST_VERSION=y
+> # BR2_LINUX_KERNEL_LATEST_CIP_VERSION is not set
+> # BR2_LINUX_KERNEL_CUSTOM_VERSION is not set
+> # BR2_LINUX_KERNEL_CUSTOM_TARBALL is not set
+> # BR2_LINUX_KERNEL_CUSTOM_GIT is not set
+> # BR2_LINUX_KERNEL_CUSTOM_HG is not set
+> # BR2_LINUX_KERNEL_CUSTOM_SVN is not set
+> BR2_LINUX_KERNEL_VERSION="4.19.88"
+> BR2_LINUX_KERNEL_PATCH=""
+> BR2_LINUX_KERNEL_USE_DEFCONFIG=y
+> # BR2_LINUX_KERNEL_USE_ARCH_DEFAULT_CONFIG is not set
+> # BR2_LINUX_KERNEL_USE_CUSTOM_CONFIG is not set
+> BR2_LINUX_KERNEL_DEFCONFIG="x86_64"
+> BR2_LINUX_KERNEL_CONFIG_FRAGMENT_FILES=""
+> BR2_LINUX_KERNEL_CUSTOM_LOGO_PATH=""
+> BR2_LINUX_KERNEL_BZIMAGE=y
+> # BR2_LINUX_KERNEL_VMLINUX is not set
+> # BR2_LINUX_KERNEL_IMAGE_TARGET_CUSTOM is not set
+> BR2_LINUX_KERNEL_GZIP=y
+> # BR2_LINUX_KERNEL_LZ4 is not set
+> # BR2_LINUX_KERNEL_LZMA is not set
+> # BR2_LINUX_KERNEL_LZO is not set
+> # BR2_LINUX_KERNEL_XZ is not set
+> # BR2_LINUX_KERNEL_DTS_SUPPORT is not set
+> # BR2_LINUX_KERNEL_INSTALL_TARGET is not set
+> # BR2_LINUX_KERNEL_NEEDS_HOST_OPENSSL is not set
+> # BR2_LINUX_KERNEL_NEEDS_HOST_LIBELF is not set
+> 
+> #
+> # Linux Kernel Extensions
+> #
+> # BR2_LINUX_KERNEL_EXT_XENOMAI is not set
+> # BR2_LINUX_KERNEL_EXT_RTAI is not set
+> # BR2_LINUX_KERNEL_EXT_EV3DEV_LINUX_DRIVERS is not set
+> # BR2_LINUX_KERNEL_EXT_FBTFT is not set
+> # BR2_LINUX_KERNEL_EXT_AUFS is not set
+> 
+> #
+> # Linux Kernel Tools
+> #
+> # BR2_PACKAGE_LINUX_TOOLS_CPUPOWER is not set
+> # BR2_PACKAGE_LINUX_TOOLS_GPIO is not set
+> # BR2_PACKAGE_LINUX_TOOLS_IIO is not set
+> # BR2_PACKAGE_LINUX_TOOLS_PCI is not set
+> # BR2_PACKAGE_LINUX_TOOLS_PERF is not set
+> 
+> #
+> # selftests needs BR2_PACKAGE_BUSYBOX_SHOW_OTHERS and a toolchain w/ dynamic library
+> #
+> # BR2_PACKAGE_LINUX_TOOLS_TMON is not set
+504,507c555
+< 
+< #
+< # v4l2loopback needs a Linux kernel to be built
+< #
+---
+> # BR2_PACKAGE_V4L2LOOPBACK is not set
+595,598c643
+< 
+< #
+< # ktap needs a Linux kernel to be built
+< #
+---
+> # BR2_PACKAGE_KTAP is not set
+617,620c662
+< 
+< #
+< # lttng-modules needs a Linux kernel to be built
+< #
+---
+> # BR2_PACKAGE_LTTNG_MODULES is not set
+646,649d687
+< # racehound needs an Linux kernel >= 3.14 to be built
+< #
+< 
+< #
+737,740c775
+< 
+< #
+< # aufs-util needs a linux kernel and a toolchain w/ threads
+< #
+---
+> # BR2_PACKAGE_AUFS_UTIL is not set
+943,946c978
+< 
+< #
+< # linux-fusion needs a Linux kernel to be built
+< #
+---
+> # BR2_PACKAGE_LINUX_FUSION is not set
+1040,1047c1072,1073
+< 
+< #
+< # dahdi-linux needs a Linux kernel to be built
+< #
+< 
+< #
+< # dahdi-tools needs a toolchain w/ threads and a Linux kernel to be built
+< #
+---
+> # BR2_PACKAGE_DAHDI_LINUX is not set
+> # BR2_PACKAGE_DAHDI_TOOLS is not set
+1103,1106c1129
+< 
+< #
+< # linux-backports needs a Linux kernel to be built
+< #
+---
+> # BR2_PACKAGE_LINUX_BACKPORTS is not set
+1166,1185c1189,1193
+< 
+< #
+< # rtl8188eu needs a Linux kernel to be built
+< #
+< 
+< #
+< # rtl8189fs needs a Linux kernel to be built
+< #
+< 
+< #
+< # rtl8723bs needs a Linux kernel to be built
+< #
+< 
+< #
+< # rtl8723bu needs a Linux kernel to be built
+< #
+< 
+< #
+< # rtl8821au needs a Linux kernel to be built
+< #
+---
+> # BR2_PACKAGE_RTL8188EU is not set
+> # BR2_PACKAGE_RTL8189FS is not set
+> # BR2_PACKAGE_RTL8723BS is not set
+> # BR2_PACKAGE_RTL8723BU is not set
+> # BR2_PACKAGE_RTL8821AU is not set
+1233,1236c1241
+< 
+< #
+< # uccp420wlan needs a Linux kernel >= 4.2 to be built
+< #
+---
+> # BR2_PACKAGE_UCCP420WLAN is not set
+1270,1273c1275
+< 
+< #
+< # xr819-xradio driver needs a Linux kernel to be built
+< #
+---
+> # BR2_PACKAGE_XR819_XRADIO is not set
+1458,1461c1460
+< 
+< #
+< # cryptodev needs a Linux kernel to be built
+< #
+---
+> # BR2_PACKAGE_CRYPTODEV is not set
+1827,1830c1826
+< 
+< #
+< # libpri needs a kernel to be built
+< #
+---
+> # BR2_PACKAGE_LIBPRI is not set
+1851,1854c1847
+< 
+< #
+< # libss7 needs a kernel to be built
+< #
+---
+> # BR2_PACKAGE_LIBSS7 is not set
+2081,2084c2074
+< 
+< #
+< # batman-adv needs a Linux kernel to be built
+< #
+---
+> # BR2_PACKAGE_BATMAN_ADV is not set
+2840,2843c2830
+< 
+< #
+< # igh-ethercat needs a Linux kernel to be built
+< #
+---
+> # BR2_PACKAGE_IGH_ETHERCAT is not set
+3102,3105c3089
+< 
+< #
+< # xtables-addons needs a Linux kernel to be built
+< #
+---
+> # BR2_PACKAGE_XTABLES_ADDONS is not set
+3284,3287c3268
+< 
+< #
+< # emlog needs a Linux kernel to be built
+< #
+---
+> # BR2_PACKAGE_EMLOG is not set
+3416,3419c3397
+< 
+< #
+< # initramfs needs a Linux kernel to be built
+< #
+---
+> # BR2_TARGET_ROOTFS_INITRAMFS is not set
+3810a3789,3791
+> # BR2_LINUX_KERNEL_TOOL_CPUPOWER is not set
+> # BR2_LINUX_KERNEL_TOOL_PERF is not set
+> # BR2_LINUX_KERNEL_TOOL_SELFTESTS is not set
