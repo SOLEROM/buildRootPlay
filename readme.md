@@ -19,5 +19,7 @@ build02	- no kenrel config in menuconfig
 ## run tests
 * [using qemu](qemu.md)
 
+## automatin
 
+* [build client service](makeFileMagic/readme.md)
 

@@ -1,0 +1,43 @@
+#!/bin/bash
+
+#################################################################################
+########   export varible to used in makefile   #################################
+export wrkdir=$(shell pwd)
+export buildRootMake=/proj/theKernel/kernelRootBuild
+export buildRootFolder=$(wrkdir)/buildRootFiles
+export output=$(wrkdir)/output
+export myConfig=$(output)/mybuildRootConfig
+
+##make options
+mkopt=--no-print-directory
+
+#################################################################################
+.PHONY: all
+all:
+	@echo "nothing for all ; use help"
+
+#################################################################################
+help:
+	@make $(mkopt) -C $(buildRootMake) help
+#################################################################################
+vars:
+	@echo "wrkdir = $(wrkdir)"
+	@make $(mkopt) -C $(buildRootMake) vars
+#################################################################################
+menuconfig:
+	@make $(mkopt) -C $(buildRootMake) menuconfig
+#################################################################################
+defconfig:
+	@make $(mkopt) -C $(buildRootMake) defconfig
+#################################################################################
+clean:
+	@make $(mkopt) -C $(buildRootMake) clean
+#################################################################################
+cleanall:
+	@make $(mkopt) -C $(buildRootMake) cleanall
+#################################################################################
+build:
+	@make $(mkopt) -C $(buildRootMake) build
+#################################################################################
+
+
